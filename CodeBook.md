@@ -48,7 +48,7 @@ The ORIGINAL data was downloaded from:  https://d396qusza40orc.cloudfront.net/ge
 
 **1. ActivityId - Identification number for the type of activity
 
-**2. ActivityType - Activity description  
+**2. SubjectId - Identification number for person performing the activity
 
 **3. fBodyAcc.mean.X - Mean  body acceleration in the X direction
 
@@ -56,159 +56,130 @@ The ORIGINAL data was downloaded from:  https://d396qusza40orc.cloudfront.net/ge
 
 **5. fBodyAcc.mean.Z - Mean  body acceleration in the Z direction
 
-**6. fBodyAcc.meanFreq.X - Mean Frequency of body acceleration in the X direction
+**6. fBodyAcc.std.X - Standard deviaton body acceleration in the X direction
 
-**7. fBodyAcc.meanFreq.Y - Mean Frequency of body acceleration in the Y direction
+**7. fBodyAcc.std.Y - Standard deviaton body acceleration in the Y direction
 
-**8. fBodyAcc.meanFreq.Z - Mean Frequency of body acceleration in the Z direction
+**8. fBodyAcc.std.Z - Standard deviaton body acceleration in the Z direction
 
-**9. fBodyAcc.std.X - Standard deviaton body acceleration in the X direction
+**9. fBodyAccJerk.mean.X - Mean  Body acceleration Jerk X direction
 
-**10. fBodyAcc.std.Y - Standard deviaton body acceleration in the Y direction
+**10. fBodyAccJerk.mean.Y - Mean  Body acceleration Jerk Y direction
 
-**11. fBodyAcc.std.Z - Standard deviaton body acceleration in the Z direction
+**11. fBodyAccJerk.mean.Z - Mean  Body acceleration Jerk Z direction
 
-**12. fBodyAccJerk.mean.X - Mean  Body acceleration Jerk X direction
+**12. fBodyAccJerk.std.X - Standard deviaton Body acceleration Jerk 
 
-**13. fBodyAccJerk.mean.Y - Mean  Body acceleration Jerk Y direction
+**13. fBodyAccJerk.std.Y - Standard deviaton Body acceleration Jerk 
 
-**14. fBodyAccJerk.mean.Z - Mean  Body acceleration Jerk Z direction
+**14. fBodyAccJerk.std.Z - Standard deviaton Body acceleration Jerk 
 
-**15. fBodyAccJerk.meanFreq.X - Mean Frequency of Body acceleration Jerk X direction
+**15. fBodyAccJerkMag.mean - Mean  Body acceleration magnitude 
 
-**16. fBodyAccJerk.meanFreq.Y - Mean Frequency of Body acceleration Jerk Y direction
+**16. fBodyAccJerkMag.std - Standard deviaton Body acceleration magnitude 
 
-**17. fBodyAccJerk.meanFreq.Z - Mean Frequency of Body acceleration Jerk Z direction
+**17. fBodyAccMag.mean - Mean  Body acceleration magnitude 
 
-**18. fBodyAccJerk.std.X - Standard deviaton Body acceleration Jerk 
+**18. fBodyAccMag.std - Standard deviaton Body acceleration magnitude 
 
-**19. fBodyAccJerk.std.Y - Standard deviaton Body acceleration Jerk 
+**19. fBodyGyro.mean.X - Mean  Body gyro X direction
 
-**20. fBodyAccJerk.std.Z - Standard deviaton Body acceleration Jerk 
+**20. fBodyGyro.mean.Y - Mean  Body gyro Y direction
 
-**21. fBodyAccJerkMag.mean - Mean  Body acceleration magnitude 
+**21. fBodyGyro.mean.Z - Mean  Body gyro Z direction
 
-**22. fBodyAccJerkMag.meanFreq - Mean Frequency of Body acceleration magnitude 
+**22. fBodyGyro.std.X - Standard deviaton Body gyro 
 
-**23. fBodyAccJerkMag.std - Standard deviaton Body acceleration magnitude 
+**23. fBodyGyro.std.Y - Standard deviaton Body gyro 
 
-**24. fBodyAccMag.mean - Mean  Body acceleration magnitude 
+**24. fBodyGyro.std.Z - Standard deviaton Body gyro 
 
-**25. fBodyAccMag.meanFreq - Mean Frequency of Body acceleration magnitude 
+**25. fBodyGyroJerkMag.mean - Mean  Body gyro Jerk 
 
-**26. fBodyAccMag.std - Standard deviaton Body acceleration magnitude 
+**26. fBodyGyroJerkMag.std - Standard deviaton Body gyro Jerk 
 
-**27. fBodyGyro.mean.X - Mean  Body gyro X direction
+**27. fBodyGyroMag.mean - Mean  Body gyro 
 
-**28. fBodyGyro.mean.Y - Mean  Body gyro Y direction
+**28. fBodyGyroMag.std - Standard deviaton Body gyro 
 
-**29. fBodyGyro.mean.Z - Mean  Body gyro Z direction
+**29. tBodyAcc.mean.X - Mean body acceleration in the X direction
 
-**30. fBodyGyro.meanFreq.X - Mean Frequency of Body gyro X direction
+**30. tBodyAcc.mean.Y - Mean body acceleration in the Y direction
 
-**31. fBodyGyro.meanFreq.Y - Mean Frequency of Body gyro Y direction
+**31. tBodyAcc.mean.Z - Mean body acceleration in the X direction
 
-**32. fBodyGyro.meanFreq.Z - Mean Frequency of Body gyro Z direction
+**32. tBodyAcc.std.X - Standard deviation for body acceleration in the X direction
 
-**33. fBodyGyro.std.X - Standard deviaton Body gyro 
+**33. tBodyAcc.std.Y - Standard deviation for body acceleration in the Y direction
 
-**34. fBodyGyro.std.Y - Standard deviaton Body gyro 
+**34. tBodyAcc.std.Z - Standard deviation for body acceleration in the Z direction
 
-**35. fBodyGyro.std.Z - Standard deviaton Body gyro 
+**35. tBodyAccJerk.mean.X - Mean  Body acceleration Jerk X direction
 
-**36. fBodyGyroJerkMag.mean - Mean  Body gyro Jerk 
+**36. tBodyAccJerk.mean.Y - Mean  Body acceleration Jerk Y direction
 
-**37. fBodyGyroJerkMag.meanFreq - Mean Frequency of Body gyro Jerk 
+**37. tBodyAccJerk.mean.Z - Mean  Body acceleration Jerk Z direction
 
-**38. fBodyGyroJerkMag.std - Standard deviaton Body gyro Jerk 
+**38. tBodyAccJerk.std.X - Standard deviaton Body acceleration Jerk X direction
 
-**39. fBodyGyroMag.mean - Mean  Body gyro 
+**39. tBodyAccJerk.std.Y - Standard deviaton Body acceleration Jerk Y direction
 
-**40. fBodyGyroMag.meanFreq - Mean Frequency of Body gyro 
+**40. tBodyAccJerk.std.Z - Standard deviaton Body acceleration Jerk Z direction
 
-**41. fBodyGyroMag.std - Standard deviaton Body gyro 
+**41. tBodyAccJerkMag.mean - Mean  Body acceleration Jerk magnitude 
 
-**42. SubjectId - Identification number for person performing the activity
+**42. tBodyAccJerkMag.std - Standard deviaton Body acceleration Jerk magnitude 
 
-**43. tBodyAcc.mean.X - Mean body acceleration in the X direction
+**43. tBodyAccMag.mean - Mean  Body acceleration magnitude 
 
-**44. tBodyAcc.mean.Y - Mean body acceleration in the Y direction
+**44. tBodyAccMag.std - Standard deviaton Body acceleration magnitude 
 
-**45. tBodyAcc.mean.Z - Mean body acceleration in the X direction
+**45. tBodyGyro.mean.X - Mean  Body gyro X direction
 
-**46. tBodyAcc.std.X - Standard deviation for body acceleration in the X direction
+**46. tBodyGyro.mean.Y - Mean  Body gyro Y direction
 
-**47. tBodyAcc.std.Y - Standard deviation for body acceleration in the Y direction
+**47. tBodyGyro.mean.Z - Mean  Body gyro Z direction
 
-**48. tBodyAcc.std.Z - Standard deviation for body acceleration in the Z direction
+**48. tBodyGyro.std.X - Standard deviaton Body gyro X direction
 
-**49. tBodyAccJerk.mean.X - Mean  Body acceleration Jerk X direction
+**49. tBodyGyro.std.Y - Standard deviaton Body gyro Y direction
 
-**50. tBodyAccJerk.mean.Y - Mean  Body acceleration Jerk Y direction
+**50. tBodyGyro.std.Z - Standard deviaton Body gyro Z direction
 
-**51. tBodyAccJerk.mean.Z - Mean  Body acceleration Jerk Z direction
+**51. tBodyGyroJerk.mean.X - Mean  Body gyro Jerk X direction
 
-**52. tBodyAccJerk.std.X - Standard deviaton Body acceleration Jerk X direction
+**52. tBodyGyroJerk.mean.Y - Mean  Body gyro Jerk Y direction
 
-**53. tBodyAccJerk.std.Y - Standard deviaton Body acceleration Jerk Y direction
+**53. tBodyGyroJerk.mean.Z - Mean  Body gyro Jerk Z direction
 
-**54. tBodyAccJerk.std.Z - Standard deviaton Body acceleration Jerk Z direction
+**54. tBodyGyroJerk.std.X - Standard deviaton Body gyro Jerk X direction
 
-**55. tBodyAccJerkMag.mean - Mean  Body acceleration Jerk magnitude 
+**55. tBodyGyroJerk.std.Y - Standard deviaton Body gyro Jerk Y direction
 
-**56. tBodyAccJerkMag.std - Standard deviaton Body acceleration Jerk magnitude 
+**56. tBodyGyroJerk.std.Z - Standard deviaton Body gyro Jerk Z direction
 
-**57. tBodyAccMag.mean - Mean  Body acceleration magnitude 
+**57. tBodyGyroJerkMag.mean - Mean  Body gyro Jerk magnitued 
 
-**58. tBodyAccMag.std - Standard deviaton Body acceleration magnitude 
+**58. tBodyGyroJerkMag.std - Standard deviaton Body gyro Jerk magnitued 
 
-**59. tBodyGyro.mean.X - Mean  Body gyro X direction
+**59. tBodyGyroMag.mean - Mean  Body gyro magnitude 
 
-**60. tBodyGyro.mean.Y - Mean  Body gyro Y direction
+**60. tBodyGyroMag.std - Standard deviaton Body gyro magnitude 
 
-**61. tBodyGyro.mean.Z - Mean  Body gyro Z direction
+**61. tGravityAcc.mean.X - Mean  Gravity acceleration in the  X direction
 
-**62. tBodyGyro.std.X - Standard deviaton Body gyro X direction
+**62. tGravityAcc.mean.Y - Mean  Gravity acceleration in the  Y direction
 
-**63. tBodyGyro.std.Y - Standard deviaton Body gyro Y direction
+**63. tGravityAcc.mean.Z - Mean  Gravity acceleration in the  Z direction
 
-**64. tBodyGyro.std.Z - Standard deviaton Body gyro Z direction
+**64. tGravityAcc.std.X - Standard deviaton Gravity acceleration in the  X direction
 
-**65. tBodyGyroJerk.mean.X - Mean  Body gyro Jerk X direction
+**65. tGravityAcc.std.Y - Standard deviaton Gravity acceleration in the  Y direction
 
-**66. tBodyGyroJerk.mean.Y - Mean  Body gyro Jerk Y direction
+**66. tGravityAcc.std.Z - Standard deviaton Gravity acceleration in the  Z direction
 
-**67. tBodyGyroJerk.mean.Z - Mean  Body gyro Jerk Z direction
+**67. tGravityAccMag.mean - Mean  Gravity acceleration in the  
 
-**68. tBodyGyroJerk.std.X - Standard deviaton Body gyro Jerk X direction
+**68. tGravityAccMag.std - Standard deviaton Gravity acceleration in the  
 
-**69. tBodyGyroJerk.std.Y - Standard deviaton Body gyro Jerk Y direction
-
-**70. tBodyGyroJerk.std.Z - Standard deviaton Body gyro Jerk Z direction
-
-**71. tBodyGyroJerkMag.mean - Mean  Body gyro Jerk magnitued 
-
-**72. tBodyGyroJerkMag.std - Standard deviaton Body gyro Jerk magnitued 
-
-**73. tBodyGyroMag.mean - Mean  Body gyro magnitude 
-
-**74. tBodyGyroMag.std - Standard deviaton Body gyro magnitude 
-
-**75. tGravityAcc.mean.X - Mean  Gravity acceleration in the  X direction
-
-**76. tGravityAcc.mean.Y - Mean  Gravity acceleration in the  Y direction
-
-**77. tGravityAcc.mean.Z - Mean  Gravity acceleration in the  Z direction
-
-**78. tGravityAcc.std.X - Standard deviaton Gravity acceleration in the  X direction
-
-**79. tGravityAcc.std.Y - Standard deviaton Gravity acceleration in the  Y direction
-
-**80. tGravityAcc.std.Z - Standard deviaton Gravity acceleration in the  Z direction
-
-**81. tGravityAccMag.mean - Mean  Gravity acceleration in the  
-
-**82. tGravityAccMag.std - Standard deviaton Gravity acceleration in the  
-
-
-
+**69. ActivityType - Activity description  
